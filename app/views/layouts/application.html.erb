@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Miip</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<%= image_tag("logo.png", :alt => "Sample App", :class => "round") %>
+				<header	class="navbar	navbar-fixed-top navbar-inverse">
+						<div	class="container">
+								<nav>
+										<ul	class="nav	navbar-nav	navbar-center">
+										
+ <%= link_to 'Supplier', controller: 'suppliers' %>
+ 
+<%= link_to 'Supply', controller: 'supplies' %>
+
+<%= link_to 'Customer', controller: 'customers' %>
+ 
+<%= link_to 'Order', controller: 'orders' %>
+
+<%= link_to 'Order_Detail', controller: 'order_details' %>
+ 
+<%= link_to 'Product', controller: 'products' %> 
+
+<%= link_to 'Category', controller: 'categories' %>
+
+<%= link_to 'Warehouse',controller: 'warehouses' %>
+
+<%= link_to 'Index' ,controller: 'welcome' %>
+
+												
+										</ul>
+								</nav>
+						</div>
+				</header>
+		</body>
+</html>
+
+<%= yield %>
+
+</body>
+</html>

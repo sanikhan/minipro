@@ -1,0 +1,4 @@
+class Product < ActiveRecord::Base
+has_many :suppliers , through =>:supply
+has_many :customers , through => :order
+end

@@ -1,0 +1,13 @@
+class CreateOrders < ActiveRecord::Migration
+  def change
+    create_table :orders do |t|
+      t.string :quantity
+      t.integer :
+      t.timestamp :date
+      t.integer :customer_id
+      t.integer :product_id
+
+      t.timestamps null: false
+    end
+  end
+end
